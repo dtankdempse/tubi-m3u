@@ -1,5 +1,3 @@
-## Tubi Live TV M3U Playlist
-
 # Tubi TV Scraper
 
 ## Overview
