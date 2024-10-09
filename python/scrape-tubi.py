@@ -8,6 +8,9 @@ from urllib.parse import unquote
 from urllib.parse import urlparse, urlunparse
 from datetime import datetime
 import unicodedata
+import argparse
+import logging
+
 
 def get_proxies(country_code):
     """
@@ -23,8 +26,9 @@ def get_proxies(country_code):
         proxy_list = response.text.splitlines()  # Split the response into individual lines
         return [f"socks4://{proxy}" for proxy in proxy_list]  # Format each proxy as 'socks4://ip:port'
     else:
-        print(f"Failed to fetch proxies for {country_code}. Status code: {response.status_code}")
+        logging.warning(f"Failed to fetch proxies for {country_code}. Status code: {response.status_code}")
         return []
+
 
 def fetch_channel_list(proxy):
     """
@@ -39,14 +43,14 @@ def fetch_channel_list(proxy):
         response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False)
         response.encoding = 'utf-8'  # Force UTF-8 encoding for the response
         if response.status_code != 200:
-            print(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
+            logging.warning(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
             return []
 
         html_content = response.content.decode('utf-8', errors='replace')  # Decode content using UTF-8 explicitly
         html_content = html_content.replace('�', 'ñ')  # Replace common problematic characters manually
 
-        # Parse the HTML content with BeautifulSoup, specifying the parser's encoding
-        soup = BeautifulSoup(html_content, "html.parser", from_encoding='utf-8')
+        # Parse the HTML content with BeautifulSoup
+        soup = BeautifulSoup(html_content, "html.parser")
 
         # Find all <script> tags and look for the one containing window.__data
         script_tags = soup.find_all("script")
@@ -57,8 +61,8 @@ def fetch_channel_list(proxy):
                 break
 
         if not target_script:
-            print("Error: Could not locate the JSON-like data in the page.")
-            print(f"Logging response content for debugging:\n{html_content[:1000]}...")  # Log the response content for analysis
+            logging.error("Error: Could not locate the JSON-like data in the page.")
+            logging.debug(f"Logging response content for debugging:\n{html_content[:1000]}...")  # Log the response content for analysis
             return []
 
         # Extract JSON-like data from the JavaScript code
@@ -71,33 +75,25 @@ def fetch_channel_list(proxy):
 
         # Clean problematic JavaScript constructs in the JSON-like data
         json_string = json_string.replace('undefined', 'null')  # Replace undefined with null
-        json_string = re.sub(r'new Date\("([^"]*)"\)', r'"\1"', json_string)  # Replace new Date() with date string
+        json_string = re.sub(r'new Date\("([^\"]*)"\)', r'"\1"', json_string)  # Replace new Date() with date string
 
-        print(f"Extracted JSON-like data (first 500 chars): {json_string[:500]}...")  # Debugging: print part of the data
+        logging.debug(f"Extracted JSON-like data (first 500 chars): {json_string[:500]}...")  # Debugging: print part of the data
 
         data = json.loads(json_string)
-        print(f"Successfully decoded JSON data!")  # Debugging: confirm successful decoding
+        logging.info("Successfully decoded JSON data!")  # Debugging: confirm successful decoding
         return data
     except requests.RequestException as e:
-        print(f"Error fetching data using proxy {proxy}: {e}")
+        logging.error(f"Error fetching data using proxy {proxy}: {e}")
         return []
-	
+
+
 def create_group_mapping(json_data):
     group_mapping = {}
 
-    # Check if json_data is a list and iterate over its items
-    if isinstance(json_data, list):
-        for item in json_data:
-            # Try to extract the 'contentIdsByContainer' if present in the list item
-            content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
-            for container_key, container_list in content_ids_by_container.items():
-                for category in container_list:
-                    group_name = category.get('name', 'Other')
-                    for content_id in category.get('contents', []):
-                        group_mapping[str(content_id)] = group_name  # Map content_id to its group name
-    else:
-        # Fallback in case the json_data is not a list
-        content_ids_by_container = json_data.get('epg', {}).get('contentIdsByContainer', {})
+    json_data = [json_data] if not isinstance(json_data, list) else json_data
+
+    for item in json_data:
+        content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
         for container_key, container_list in content_ids_by_container.items():
             for category in container_list:
                 group_name = category.get('name', 'Other')
@@ -105,6 +101,7 @@ def create_group_mapping(json_data):
                     group_mapping[str(content_id)] = group_name  # Map content_id to its group name
 
     return group_mapping
+
 
 def fetch_epg_data(channel_list):
     epg_data = []
@@ -117,26 +114,29 @@ def fetch_epg_data(channel_list):
         response = requests.get(url, params=params)
 
         if response.status_code != 200:
-            print(f"Failed to fetch EPG data for group {group}. Status code: {response.status_code}")
+            logging.warning(f"Failed to fetch EPG data for group {group}. Status code: {response.status_code}")
             continue
 
         try:
             epg_json = response.json()
             epg_data.extend(epg_json.get('rows', []))
         except json.JSONDecodeError as e:
-            print(f"Error decoding EPG JSON: {e}")
+            logging.error(f"Error decoding EPG JSON: {e}")
 
     return epg_data
+
 
 def clean_stream_url(url):
     parsed_url = urlparse(url)
     clean_url = urlunparse((parsed_url.scheme, parsed_url.netloc, parsed_url.path, '', '', ''))
     return clean_url
-	
+
+
 def normalize_text(text):
     # Normalize the text to ASCII
     normalized_text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
-    return normalized_text	
+    return normalized_text
+
 
 def create_m3u_playlist(epg_data, group_mapping, country):
     # Sort the channels alphabetically by their names
@@ -167,6 +167,7 @@ def create_m3u_playlist(epg_data, group_mapping, country):
 
     return playlist
 
+
 def convert_to_xmltv_format(iso_time):
     """Convert ISO 8601 time to XMLTV format."""
     try:
@@ -179,6 +180,7 @@ def convert_to_xmltv_format(iso_time):
         # Return the original time if it fails to parse
         return iso_time
 
+
 def create_epg_xml(epg_data):
     root = ET.Element("tv")
 
@@ -187,7 +189,10 @@ def create_epg_xml(epg_data):
         display_name = ET.SubElement(channel, "display-name")
         display_name.text = station.get("title", "Unknown Title")
 
-        icon = ET.SubElement(channel, "icon", src=station.get("images", {}).get("thumbnail", [None])[0])
+        thumbnails = station.get("images", {}).get("thumbnail", [])
+        icon_src = thumbnails[0] if thumbnails else None
+        if icon_src:
+            ET.SubElement(channel, "icon", src=icon_src)
 
         for program in station.get('programs', []):
             programme = ET.SubElement(root, "programme", channel=str(station.get("content_id")))
@@ -208,53 +213,69 @@ def create_epg_xml(epg_data):
 
     tree = ET.ElementTree(root)
     return tree
-	
+
+
 def save_file(content, filename):
     script_directory = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_directory, filename)
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
-    print(f"File saved: {file_path}")
+    logging.info(f"File saved: {file_path}")
+
 
 def save_epg_to_file(tree, filename):
     script_directory = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_directory, filename)
 
     tree.write(file_path, encoding='utf-8', xml_declaration=True)
-    print(f"EPG XML file saved: {file_path}")
+    logging.info(f"EPG XML file saved: {file_path}")
+
+
+def extract_channel_list(json_data):
+    channel_list = []
+    json_data = [json_data] if not isinstance(json_data, list) else json_data
+
+    for item in json_data:
+        content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
+        for container_list in content_ids_by_container.values():
+            for category in container_list:
+                channel_list.extend(category.get('contents', []))
+
+    return channel_list
+
 
 def main():
-	# Add other countries to the array.
-    countries = ["US"]
+    # Argument parser for dynamic input
+    parser = argparse.ArgumentParser(description='Scrape Tubi TV data.')
+    parser.add_argument('--countries', type=str, nargs='+', default=['US'], help='List of country codes.')
+    args = parser.parse_args()
+
+    # Setting up logging
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logger = logging.getLogger()
+
+    countries = args.countries
+
     for country in countries:
         proxies = get_proxies(country)
         if not proxies:
-            print(f"No proxies found for country {country}. Skipping...")
+            logger.warning(f"No proxies found for country {country}. Skipping...")
             continue
 
+        data_fetched = False
         for proxy in proxies:
-            print(f"Trying proxy {proxy} for country {country}...")
+            logger.info(f"Trying proxy {proxy} for country {country}...")
             json_data = fetch_channel_list(proxy)
             if json_data:
-                print(f"Successfully fetched data using proxy {proxy} for country {country}")
-                # Process the data if it was fetched successfully
-                channel_list = []
-                if isinstance(json_data, list):
-                    for item in json_data:
-                        content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
-                        for container_list in content_ids_by_container.values():
-                            for category in container_list:
-                                channel_list.extend(category.get('contents', []))
-                else:
-                    content_ids_by_container = json_data.get('epg', {}).get('contentIdsByContainer', {})
-                    for container_list in content_ids_by_container.values():
-                        for category in container_list:
-                            channel_list.extend(category.get('contents', []))
-
+                logger.info(f"Successfully fetched data using proxy {proxy} for country {country}")
+                
+                # Extract channel list and EPG data
+                channel_list = extract_channel_list(json_data)
                 epg_data = fetch_epg_data(channel_list)
+                
                 if not epg_data:
-                    print("No EPG data found.")
+                    logger.warning("No EPG data found.")
                     continue
 
                 # Create the group mapping using the full JSON data
@@ -267,11 +288,13 @@ def main():
                 # Save files with appended country code
                 save_file(m3u_playlist, f"tubi_playlist_{country.lower()}.m3u")
                 save_epg_to_file(epg_tree, f"tubi_epg_{country.lower()}.xml")
+                
+                data_fetched = True
+                break  # Stop trying more proxies if successful
 
-                # Break after successful fetch to avoid using multiple proxies for the same country
-                break
-            else:
-                print(f"Failed to fetch data using proxy {proxy} for country {country}. Trying next proxy...")
+        if not data_fetched:
+            logger.error(f"Failed to fetch data for country {country} after trying all proxies.")
+
 
 if __name__ == "__main__":
     main()
