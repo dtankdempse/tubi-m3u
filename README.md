@@ -1,92 +1,82 @@
-# Tubi TV Scraper
+# Tubi TV M3U Scraper
 
-## Overview
-This script scrapes live TV channel and Electronic Program Guide (EPG) data from Tubi TV using proxy servers. It generates M3U playlists and EPG XML files that can be used in media players such as VLC or Plex, providing a seamless live TV experience.
+This repository contains a Python script (`scrape-tubi.py`) that scrapes Tubi TV for channel listings and creates M3U playlists along with XML EPG files. This version has been updated to improve reliability, flexibility, and usability compared to the older version (`scrape-tubi OG.py`).
 
-## New Features
-This version of the Tubi TV scraper includes several new improvements:
+## Features
 
-- **Improved Logging**: Uses the `logging` module to replace `print()` statements, providing more control and allowing different log levels (e.g., `INFO`, `WARNING`, `ERROR`).
-- **SSL Verification**: Ensures all HTTPS requests are verified securely using the `certifi` library, making data transfers more secure.
-- **Command-Line Arguments**: Adds flexibility by allowing users to specify which countries to scrape data for and where to save the output files.
-- **Retry Logic for Proxies**: Limits the number of retries for failed proxies to avoid excessive network requests.
-- **Flexible Output Directory**: Allows users to specify the directory where output files (M3U and XML) should be saved.
+- **Proxy Support**: Fetch Tubi TV channel listings via SOCKS4 proxies.
+- **Improved Error Handling**: Detailed exception handling for SSL and connection issues.
+- **Retry Mechanism**: Limit the number of retries per proxy to ensure efficient usage.
+- **Logging**: Added logging for better debugging and monitoring.
+- **Command-Line Flexibility**: Ability to specify countries using command-line arguments.
+- **Automatic Output Directory**: Output files are saved in the same directory as the script, simplifying file management.
+- **Timeout Control**: Proxy requests now have a timeout to prevent hanging on slow connections.
+
+## Requirements
+
+- Python 3.x
+- Required Python packages:
+  - `requests`
+  - `beautifulsoup4`
+  - `argparse`
+  - `urllib3`
+
+You can install the required dependencies using:
+```bash
+pip install requests beautifulsoup4
+```
 
 ## Usage
-The script can be run with command-line arguments for added flexibility. Here is an example of how to use it:
 
+### Basic Usage
 ```bash
-python scrape-tubi.py --countries US --output-dir /path/to/save/files
+python scrape-tubi.py --countries US
 ```
 
 ### Arguments
-- `--countries`: A space-separated list of country codes to scrape data for. Defaults to `US`.
-- `--output-dir`: The directory where the generated M3U playlist and EPG XML files will be saved. Defaults to the current directory.
 
-## Dependencies
-The script requires the following Python libraries:
+- `--countries`: Specify the country codes for which to fetch proxies and Tubi TV data. Default is `US`.
 
-- `requests`
-- `beautifulsoup4`
-- `certifi` (for secure SSL verification)
-- `argparse` (standard library)
-- `logging` (standard library)
-
-You can install these dependencies using the following command:
-
+### Example
 ```bash
-pip install requests beautifulsoup4 certifi
+python scrape-tubi.py --countries US CA
 ```
+This command fetches Tubi TV data for the US and Canada, saving output files to the same directory as the script.
 
-## Example Commands
-- To scrape data for the US and save output in the current directory:
-  ```bash
-  python scrape-tubi.py --countries US
-  ```
-- To scrape data for multiple countries (`US`, `CA`) and save in a specific folder:
-  ```bash
-  python scrape-tubi.py --countries US CA --output-dir /home/user/tubi-output
-  ```
+## Improvements Over the Original Version
 
-## Features Overview
-- **Logging**: Uses `INFO`, `WARNING`, and `ERROR` levels to differentiate messages, making it easier to debug issues and monitor script execution.
-- **Proxy Support**: Automatically rotates through a list of proxies until a successful connection is made, ensuring stability and reliability.
-- **Improved Security**: All HTTPS requests are verified to ensure secure communication with Tubi TV servers using SSL certificates.
-- **Retry Limitation**: The `MAX_RETRIES` parameter prevents unnecessary retries, improving script efficiency and reducing network load.
-- **Flexible Output Directory**: Specify the output directory to control where generated files are saved.
+### Version 2.1
 
-## Contributing
-Contributions are welcome! If you'd like to contribute, please fork the repository, create a new branch for your changes, and submit a pull request.
+1. **SSL Warnings Suppressed**:
+   - SSL warnings are now suppressed to avoid console clutter when using unverified HTTPS requests.
 
-### Contribution Guidelines
-- Ensure that all new features are properly documented in the README.
-- Add tests where appropriate to validate new functionality.
-- Follow best coding practices to ensure consistency and readability.
+2. **Logging System Added**:
+   - Replaced `print()` statements with a proper logging system for better control and information tracking.
 
-## Changelog
-### Version 2.0
-- Introduced logging for better control over script output.
-- Added SSL verification for secure proxy connections.
-- Implemented command-line arguments for more flexibility in usage.
-- Limited retries for proxies to prevent excessive network requests.
+3. **Retry Limit**:
+   - Added a retry mechanism (`MAX_RETRIES = 10`) to prevent indefinite attempts to connect through unreliable proxies.
 
-## How the Script Works
-1. **Get Proxies**: The script retrieves a list of proxies for the specified country using ProxyScrape.
-2. **Fetch Channel List**: Connects to Tubi TV via a proxy to fetch channel and EPG data.
-3. **Generate Playlist and EPG Files**: Creates an M3U playlist and an XML EPG file, then saves them to the specified output directory.
+4. **Better Exception Handling**:
+   - Enhanced exception handling, specifically for SSL errors and connection issues, leading to more robust proxy management.
 
-## FAQ
-- **Why do I need proxies?**
-  Proxies help avoid rate-limiting and prevent being blocked by Tubi TV servers, ensuring continuous scraping without interruptions.
+5. **Flexible Command-Line Options**:
+   - Added command-line arguments for specifying the list of countries, making the script easier to configure without code modifications.
 
-- **What if the script fails to get proxies?**
-  If no proxies are found, the script will print a warning and skip the country.
+6. **Timeout Parameter**:
+   - Added a `timeout=10` parameter for all proxy requests, reducing the risk of the script hanging on slow connections.
 
-- **How do I install dependencies?**
-  Use the command `pip install requests beautifulsoup4 certifi` to install all required dependencies.
+7. **Automatic Output Directory**:
+   - Files are now saved in the same directory as the script by default, making output management simpler and more predictable.
+
+## Notes
+
+- **Proxy Reliability**: The script uses free proxies from ProxyScrape, which may be unreliable. It is recommended to use paid proxies for consistent performance.
+- **Security Warning**: SSL verification is disabled for proxy connections, which may pose security risks. Use this script in trusted environments only.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 
 
