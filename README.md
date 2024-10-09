@@ -1,6 +1,6 @@
 # Tubi TV M3U Scraper
 
-This repository contains a Python script (`scrape-tubi.py`) that scrapes Tubi TV for channel listings and creates M3U playlists along with XML EPG files. This version has been updated to improve reliability, flexibility, and usability compared to the older version (`scrape-tubi OG.py`).
+This repository contains a Python script (`scrape-tubi.py`) that scrapes Tubi TV for channel listings and creates M3U playlists along with XML EPG files. This version has been updated to improve reliability, flexibility, and usability compared to the older version.
 
 ## Features
 
