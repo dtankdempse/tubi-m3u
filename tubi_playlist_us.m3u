@@ -220,7 +220,7 @@ https://live-manifest.production-public.tubi.io/live/d4996d1c-b12b-4220-ac05-b67
 #EXTINF:-1 tvg-id="675569" tvg-logo="https://canvas.tubitv.com/opts/q3F6f2l_q9long==/56a949e1-89b9-4323-a157-852354bda1ca/CHgQeDoFMS4xLjJAAQ==" group-title="Movie Channels",MyTime Movie Network
 https://live-manifest.production-public.tubi.io/live/3fe27af2-b9ab-4907-8b4b-a95fe5a260c7/playlist.m3u8
 #EXTINF:-1 tvg-id="400000105" tvg-logo="https://canvas.tubitv.com/opts/W4Jum4azOmZMdg==/13cb369b-10c8-4017-82f6-3658ff67b899/CHgQeDoFMS4xLjJAAQ==" group-title="Classic TV",Nash Bridges
-https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01,Nash-Bridges.m3u8
+https://live-manifest.production-public.tubi.io/live/9d75d44d-30f4-4b50-8a54-1d03c21bb052/playlist.m3u8
 #EXTINF:-1 tvg-id="556174" tvg-logo="https://canvas.tubitv.com/opts/CGM972sEdvuVcQ==/a9097c5c-9374-49bd-b791-639fe3c02017/CHgQeDoFMS4xLjJAAQ==" group-title="National News",NBC News NOW
 https://live-manifest.production-public.tubi.io/live/afc413b0-0c3f-4f44-8071-d2abc79b9334/playlist.m3u8
 #EXTINF:-1 tvg-id="557345" tvg-logo="https://canvas.tubitv.com/opts/QyBNLx_XbywhMg==/08fde41e-4252-484f-8b51-17124415b90c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",News 12 New York
