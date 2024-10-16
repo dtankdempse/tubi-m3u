@@ -181,10 +181,6 @@ https://live-manifest.production-public.tubi.io/live/048b6ace-b717-4e56-afc8-fbc
 https://live-manifest.production-public.tubi.io/live/42a00bda-1716-409e-965f-c11807396025/playlist.m3u8
 #EXTINF:-1 tvg-id="400000033" tvg-logo="https://canvas.tubitv.com/opts/J87vaOoO1SROcA==/4258e598-4722-409b-8e3c-625f800ba9ba/CHgQeDoFMS4xLjJAAQ==" group-title="Kids & Family",Kartoon Channel!
 https://live-manifest.production-public.tubi.io/live/d206145d-36c9-462a-8803-46779548c49e/playlist.m3u8
-#EXTINF:-1 tvg-id="603907" tvg-logo="https://canvas.tubitv.com/opts/o5G4vNdphE_70g==/14d79fa8-04ea-4a04-9c57-22dca8e2851c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KCCI Iowa Des Moines 8
-https://live-manifest.production-public.tubi.io/live/4a7e9cd7-dc2c-431e-9aee-b600da68745e/playlist.m3u8
-#EXTINF:-1 tvg-id="687448" tvg-logo="https://canvas.tubitv.com/opts/ReXWcRwwpY-gOg==/b4f8a8e0-d44c-480c-b6e6-2781bc0f2f69/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KMTV 3 News Omaha
-https://live-manifest.production-public.tubi.io/live/8c1baf80-6a9c-4262-9a5c-06a981190e6d/playlist.m3u8
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas.tubitv.com/opts/qXphKmGOHA6AJg==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjJAAQ==" group-title="National News",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/30ce17f7-c7e4-4721-93cb-551054593b69/playlist.m3u8
 #EXTINF:-1 tvg-id="400000067" tvg-logo="https://canvas.tubitv.com/opts/-dKa4JA3kRQYlQ==/e4f84ab2-4935-4063-ad29-cc852b91e3b7/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Living with Evil
