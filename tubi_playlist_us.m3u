@@ -179,10 +179,6 @@ https://live-manifest.production-public.tubi.io/live/048b6ace-b717-4e56-afc8-fbc
 https://live-manifest.production-public.tubi.io/live/42a00bda-1716-409e-965f-c11807396025/playlist.m3u8
 #EXTINF:-1 tvg-name="Kartoon Channel!" tvg-id="400000033" tvg-logo="https://canvas.tubitv.com/opts/J87vaOoO1SROcA==/4258e598-4722-409b-8e3c-625f800ba9ba/CHgQeDoFMS4xLjJAAQ==" group-title="Kids & Family",Kartoon Channel!
 https://live-manifest.production-public.tubi.io/live/d206145d-36c9-462a-8803-46779548c49e/playlist.m3u8
-#EXTINF:-1 tvg-name="KCCI Iowa Des Moines 8" tvg-id="603907" tvg-logo="https://canvas.tubitv.com/opts/o5G4vNdphE_70g==/14d79fa8-04ea-4a04-9c57-22dca8e2851c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KCCI Iowa Des Moines 8
-https://live-manifest.production-public.tubi.io/live/4a7e9cd7-dc2c-431e-9aee-b600da68745e/playlist.m3u8
-#EXTINF:-1 tvg-name="KMTV 3 News Omaha" tvg-id="687448" tvg-logo="https://canvas.tubitv.com/opts/ReXWcRwwpY-gOg==/b4f8a8e0-d44c-480c-b6e6-2781bc0f2f69/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KMTV 3 News Omaha
-https://live-manifest.production-public.tubi.io/live/8c1baf80-6a9c-4262-9a5c-06a981190e6d/playlist.m3u8
 #EXTINF:-1 tvg-name="LiveNOW from FOX" tvg-id="555127" tvg-logo="https://canvas.tubitv.com/opts/qXphKmGOHA6AJg==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjJAAQ==" group-title="National News",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/30ce17f7-c7e4-4721-93cb-551054593b69/playlist.m3u8
 #EXTINF:-1 tvg-name="Living with Evil" tvg-id="400000067" tvg-logo="https://canvas.tubitv.com/opts/-dKa4JA3kRQYlQ==/e4f84ab2-4935-4063-ad29-cc852b91e3b7/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Living with Evil
@@ -236,7 +232,7 @@ https://live-manifest.production-public.tubi.io/live/5f39e8c9-d818-4a09-ab4f-f4a
 #EXTINF:-1 tvg-name="Nikita" tvg-id="400000071" tvg-logo="https://canvas.tubitv.com/opts/lbY32G_B8eI8ew==/bf6f69f6-4495-4bc2-94f9-fd91877e36f0/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",Nikita
 https://live-manifest.production-public.tubi.io/live/396b603d-6034-4692-96f5-315d6d01a8b7/playlist.m3u8
 #EXTINF:-1 tvg-name="Nosey" tvg-id="641492" tvg-logo="https://canvas.tubitv.com/opts/IeEspzMFuSIpuw==/22eaf49e-a2ad-4da4-afbd-66aedb72c78f/CHgQeDoFMS4xLjJAAQ==" group-title="Reality",Nosey
-https://live-manifest.production-public.tubi.io/live/01a11928-054f-4a65-a390-ff4fda4e1e6f/playlist.m3u8
+https://live-manifest.production-public.tubi.io/live/78c30bbd-f60c-4ee6-9922-ad7aa63ca8ec/playlist.m3u8
 #EXTINF:-1 tvg-name="On the Telly" tvg-id="400000072" tvg-logo="https://canvas.tubitv.com/opts/rM3vNTzXaqwQBA==/1b5831e6-460f-4a7b-a84b-019bcdf0e87f/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",On the Telly
 https://live-manifest.production-public.tubi.io/live/0c6577db-8439-4907-829e-0bb06107e89b/playlist.m3u8
 #EXTINF:-1 tvg-name="Our Voice Our Truth" tvg-id="555382" tvg-logo="https://canvas.tubitv.com/opts/80lRfUhemZmYsg==/467445b8-5e63-4c4c-9d18-1d905b01a79e/CHgQeDoFMS4xLjJAAQ==" group-title="Black Entertainment",Our Voice Our Truth
@@ -318,7 +314,7 @@ https://live-manifest.production-public.tubi.io/live/87d83d4f-785a-46c8-9e33-12e
 #EXTINF:-1 tvg-name="UnXplained Zone" tvg-id="400000094" tvg-logo="https://canvas.tubitv.com/opts/6658mYCoYGuArg==/64bfc334-1bea-4a73-bb93-2966a10288f9/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",UnXplained Zone
 https://live-manifest.production-public.tubi.io/live/14e21e8b-e1cc-420f-9743-6e4625842681/playlist.m3u8
 #EXTINF:-1 tvg-name="Vice" tvg-id="666613" tvg-logo="https://canvas.tubitv.com/opts/mD4vWWWUVZhLtg==/e9857bc6-ee9a-4823-b3ea-ab97d0a85143/CHgQeDoFMS4xLjJAAQ==" group-title="Pop Culture",Vice
-https://live-manifest.production-public.tubi.io/live/6852cd0f-0900-4d8a-8744-5c4c7cddd463/playlist.m3u8
+https://live-manifest.production-public.tubi.io/live/073ab3b0-a8a5-472d-9b45-46d3dead6146/playlist.m3u8
 #EXTINF:-1 tvg-name="Wanted: Dead or Alive" tvg-id="680705" tvg-logo="https://canvas.tubitv.com/opts/IW9G3hNOWLoe0g==/5583c936-6239-4da3-b733-a9aaeebbc2fe/CHgQeDoFMS4xLjJAAQ==" group-title="Classic TV",Wanted: Dead or Alive
 https://live-manifest.production-public.tubi.io/live/3c8b20f7-d0bb-4ee4-b7da-0677b0c6256b/playlist.m3u8
 #EXTINF:-1 tvg-name="Watchlist" tvg-id="715943" tvg-logo="https://canvas.tubitv.com/opts/s6Qjg49BjoBogA==/3f255caf-ac21-456a-add4-31745babe3cb/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",Watchlist
