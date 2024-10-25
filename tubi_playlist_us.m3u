@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://example.com/tubi_epg_us.xml"
+#EXTM3U url-tvg="https://github.com/dtankdempse/tubi-m3u/raw/refs/heads/main/tubi_epg_us.xml"
 #EXTINF:-1 tvg-name="ABC News Live" tvg-id="618762" tvg-logo="https://canvas.tubitv.com/opts/hnYDbymwqSsSWg==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjJAAQ==" group-title="National News",ABC News Live
 https://live-manifest.production-public.tubi.io/live/9d419cbd-86b2-4f8f-be44-98e043f297cc/playlist.m3u8
 #EXTINF:-1 tvg-name="ACCDN" tvg-id="400000012" tvg-logo="https://canvas.tubitv.com/opts/95tDSfX7pNr-TA==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjJAAQ==" group-title="Sports On Now",ACCDN
