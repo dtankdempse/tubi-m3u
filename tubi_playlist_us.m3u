@@ -27,8 +27,6 @@ https://live-manifest.production-public.tubi.io/live/1e521300-45af-4fc7-afb6-204
 https://live-manifest.production-public.tubi.io/live/ba79370c-ea46-42d1-8869-3ea7369f3703/playlist.m3u8
 #EXTINF:-1 tvg-name="beIN Sports XTRA En Español" tvg-id="613759" tvg-logo="https://canvas.tubitv.com/opts/iFWFpv4Alp0wug==/8968101d-cc65-48c7-a102-0a6a46ca55db/CHgQeDoFMS4xLjJAAQ==" group-title="Español",beIN Sports XTRA En Español
 https://live-manifest.production-public.tubi.io/live/82c7f2de-f4ea-44a4-8200-069c5c0bb639/playlist.m3u8
-#EXTINF:-1 tvg-name="beIN Sports XTRA En Español" tvg-id="613759" tvg-logo="https://canvas.tubitv.com/opts/iFWFpv4Alp0wug==/8968101d-cc65-48c7-a102-0a6a46ca55db/CHgQeDoFMS4xLjJAAQ==" group-title="Español",beIN Sports XTRA En Español
-https://live-manifest.production-public.tubi.io/live/82c7f2de-f4ea-44a4-8200-069c5c0bb639/playlist.m3u8
 #EXTINF:-1 tvg-name="Bloomberg Originals" tvg-id="571664" tvg-logo="https://canvas.tubitv.com/opts/j9v3yPXJVv5jBw==/0536c907-af63-40b6-a8d7-62c190492c5a/CHgQeDoFMS4xLjJAAQ==" group-title="Business News",Bloomberg Originals
 https://live-manifest.production-public.tubi.io/live/033a95dc-45d3-4fc7-96c3-39941762c6d4/playlist.m3u8
 #EXTINF:-1 tvg-name="Bloomberg TV+" tvg-id="555124" tvg-logo="https://canvas.tubitv.com/opts/0ptp8mNgaH2v4A==/fde25048-c7d2-4bfb-b744-06755f42d915/CHgQeDoFMS4xLjJAAQ==" group-title="Business News",Bloomberg TV+
@@ -69,10 +67,6 @@ https://live-manifest.production-public.tubi.io/live/88af100a-4ed1-407a-aebe-da8
 https://live-manifest.production-public.tubi.io/live/32323cb9-9724-4321-9917-3ec8a86de24c/playlist.m3u8
 #EXTINF:-1 tvg-name="Crime 360" tvg-id="400000096" tvg-logo="https://canvas.tubitv.com/opts/weXo8m2Wwg6MkA==/d5be9882-54b8-4047-a5aa-37684b94044b/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Crime 360
 https://live-manifest.production-public.tubi.io/live/b4d3be25-8408-4cfc-9911-2529cf617174/playlist.m3u8
-#EXTINF:-1 tvg-name="Crime 360" tvg-id="400000096" tvg-logo="https://canvas.tubitv.com/opts/weXo8m2Wwg6MkA==/d5be9882-54b8-4047-a5aa-37684b94044b/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Crime 360
-https://live-manifest.production-public.tubi.io/live/b4d3be25-8408-4cfc-9911-2529cf617174/playlist.m3u8
-#EXTINF:-1 tvg-name="Crime Cults Killers" tvg-id="400000095" tvg-logo="https://canvas.tubitv.com/opts/cmYKagvpGx_1gg==/12e83781-4ab1-491a-826e-8b968c78ec32/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Crime Cults Killers
-https://live-manifest.production-public.tubi.io/live/5a091ae2-26d3-42a5-a9dc-f222d1cda041/playlist.m3u8
 #EXTINF:-1 tvg-name="Crime Cults Killers" tvg-id="400000095" tvg-logo="https://canvas.tubitv.com/opts/cmYKagvpGx_1gg==/12e83781-4ab1-491a-826e-8b968c78ec32/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Crime Cults Killers
 https://live-manifest.production-public.tubi.io/live/5a091ae2-26d3-42a5-a9dc-f222d1cda041/playlist.m3u8
 #EXTINF:-1 tvg-name="Crime Scenes" tvg-id="715949" tvg-logo="https://canvas.tubitv.com/opts/R5RvZbPAfSDhMQ==/4f7b9117-d773-4dbc-a9e2-4bb77bae1126/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Crime Scenes
@@ -105,8 +99,6 @@ https://live-manifest.production-public.tubi.io/live/22574bab-8a1f-44f4-b62f-ae2
 https://live-manifest.production-public.tubi.io/live/02ac4b2e-84e9-4d37-8a09-1a0615032f6a/playlist.m3u8
 #EXTINF:-1 tvg-name="Estrella News" tvg-id="560215" tvg-logo="https://canvas.tubitv.com/opts/YDyidKyBftDltg==/6693c612-32f8-4e02-be56-0029a4576cb2/CHgQeDoFMS4xLjJAAQ==" group-title="Español",Estrella News
 https://live-manifest.production-public.tubi.io/live/0253efd0-626e-4771-ad56-bc216a221fda/playlist.m3u8
-#EXTINF:-1 tvg-name="Estrella News" tvg-id="560215" tvg-logo="https://canvas.tubitv.com/opts/YDyidKyBftDltg==/6693c612-32f8-4e02-be56-0029a4576cb2/CHgQeDoFMS4xLjJAAQ==" group-title="Español",Estrella News
-https://live-manifest.production-public.tubi.io/live/0253efd0-626e-4771-ad56-bc216a221fda/playlist.m3u8
 #EXTINF:-1 tvg-name="EstrellaTV" tvg-id="400000031" tvg-logo="https://canvas.tubitv.com/opts/Xufi-qkaGmJckQ==/529ef58f-5297-4ba3-8373-cc5efdd68a65/CHgQeDoFMS4xLjJAAQ==" group-title="Español",EstrellaTV
 https://live-manifest.production-public.tubi.io/live/3e283b80-728c-48b5-b8c5-571fc3598be0/playlist.m3u8
 #EXTINF:-1 tvg-name="Euronews" tvg-id="559144" tvg-logo="https://canvas.tubitv.com/opts/mv7jH__qbm1hqw==/bac08913-5ae4-4e98-8a24-18f143bd6e25/CHgQeDoFMS4xLjJAAQ==" group-title="Global News",Euronews
@@ -137,8 +129,6 @@ https://live-manifest.production-public.tubi.io/live/78391ebf-985c-4a49-869c-a19
 https://live-manifest.production-public.tubi.io/live/b749bd8d-516c-4d26-a2c0-fcf9bb836a08/playlist.m3u8
 #EXTINF:-1 tvg-name="Fox Sports En Español" tvg-id="613695" tvg-logo="https://canvas.tubitv.com/opts/jNDHCG_uWIUdGg==/4e784885-7105-4d24-9d2a-b67014e4fb77/CHgQeDoFMS4xLjJAAQ==" group-title="Español",Fox Sports En Español
 https://live-manifest.production-public.tubi.io/live/d1725d9e-4687-4b99-9e71-24c562c0f9aa/playlist.m3u8
-#EXTINF:-1 tvg-name="Fox Sports En Español" tvg-id="613695" tvg-logo="https://canvas.tubitv.com/opts/jNDHCG_uWIUdGg==/4e784885-7105-4d24-9d2a-b67014e4fb77/CHgQeDoFMS4xLjJAAQ==" group-title="Español",Fox Sports En Español
-https://live-manifest.production-public.tubi.io/live/d1725d9e-4687-4b99-9e71-24c562c0f9aa/playlist.m3u8
 #EXTINF:-1 tvg-name="FOX Sports on Tubi" tvg-id="613683" tvg-logo="https://canvas.tubitv.com/opts/mWOMDEYei2qBqg==/69e052e9-4264-45cf-93f6-6218f998abc4/CHgQeDoFMS4xLjJAAQ==" group-title="Sports On Now",FOX Sports on Tubi
 https://live-manifest.production-public.tubi.io/live/7a573d95-1f3c-4fb8-a38b-bd2139547986/playlist.m3u8
 #EXTINF:-1 tvg-name="FOX Weather" tvg-id="628893" tvg-logo="https://canvas.tubitv.com/opts/gZoYgTI5E5wjgQ==/ac3a8a9b-0068-488b-a5c6-380f373cc446/CHgQeDoFMS4xLjJAAQ==" group-title="Weather",FOX Weather
@@ -166,7 +156,7 @@ https://live-manifest.production-public.tubi.io/live/9b35778f-e498-428b-8fb7-a2b
 #EXTINF:-1 tvg-name="Heartland" tvg-id="671821" tvg-logo="https://canvas.tubitv.com/opts/bsdzY_mVCoqmLw==/9f14559d-8ba0-4e75-bce4-f21e3c45b5db/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",Heartland
 https://live-manifest.production-public.tubi.io/live/4e7b9686-8610-4b46-9cf7-48a9f6e17f74/playlist.m3u8
 #EXTINF:-1 tvg-name="Hersphere" tvg-id="400000104" tvg-logo="https://canvas.tubitv.com/opts/WFOo2XWYsbTHfw==/2733aed8-2c07-4221-9669-061ef85c0df0/CHgQeDoFMS4xLjJAAQ==" group-title="Classic TV",Hersphere
-https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01,Hersphere.m3u8?yo.ap=https://lna.tubi.video/prd-yospace/&yo.t.jt=1000&yo.eb.fb=aHR0cHM6Ly9sbmMtaGVyc3BoZXJlLnR1YmkudmlkZW8vcGxheWxpc3QubTN1OA==
+https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01,Hersphere.m3u8
 #EXTINF:-1 tvg-name="Hi-YAH!" tvg-id="685558" tvg-logo="https://canvas.tubitv.com/opts/_KGLZu2PpfrOZA==/b9a34dbb-8a11-422b-83dc-75514e9c3a2c/CHgQeDoFMS4xLjJAAQ==" group-title="Movie Channels",Hi-YAH!
 https://live-manifest.production-public.tubi.io/live/199789ce-c89f-4a19-ab3b-c3afb8e591a8/playlist.m3u8
 #EXTINF:-1 tvg-name="Homeful" tvg-id="700414" tvg-logo="https://canvas.tubitv.com/opts/2ZH4U-7jB61ukg==/790ebde9-0938-4667-9664-62136298f868/CHgQeDoFMS4xLjJAAQ==" group-title="Lifestyle",Homeful
@@ -181,8 +171,6 @@ https://live-manifest.production-public.tubi.io/live/df00af72-ce24-414d-bb08-0fc
 https://live-manifest.production-public.tubi.io/live/27673443-ff15-4731-aee1-63f1c6a4f7d7/playlist.m3u8
 #EXTINF:-1 tvg-name="ION" tvg-id="682634" tvg-logo="https://canvas.tubitv.com/opts/onVGL2ih6nzN2Q==/d7bf80e8-e8bc-4883-9c2b-551d1d7ab80c/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",ION
 https://live-manifest.production-public.tubi.io/live/e429628a-432d-4792-b7b7-2db6a277c7ec/playlist.m3u8
-#EXTINF:-1 tvg-name="ION" tvg-id="682634" tvg-logo="https://canvas.tubitv.com/opts/onVGL2ih6nzN2Q==/d7bf80e8-e8bc-4883-9c2b-551d1d7ab80c/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",ION
-https://live-manifest.production-public.tubi.io/live/e429628a-432d-4792-b7b7-2db6a277c7ec/playlist.m3u8
 #EXTINF:-1 tvg-name="ION Mystery" tvg-id="684167" tvg-logo="https://canvas.tubitv.com/opts/jkjd2f8S9etV8Q==/b74f76d9-1cd3-4ff8-861a-c4613ef3ca3e/CHgQeDoFMS4xLjJAAQ==" group-title="Mystery",ION Mystery
 https://live-manifest.production-public.tubi.io/live/e242ed10-1a2f-4236-8bee-54753e89e22b/playlist.m3u8
 #EXTINF:-1 tvg-name="ION Plus" tvg-id="684165" tvg-logo="https://canvas.tubitv.com/opts/SfZTBakRpXzAEw==/979fd7e0-d2df-4c2b-90d0-af690c9405cb/CHgQeDoFMS4xLjJAAQ==" group-title="TV Dramas",ION Plus
@@ -191,6 +179,10 @@ https://live-manifest.production-public.tubi.io/live/048b6ace-b717-4e56-afc8-fbc
 https://live-manifest.production-public.tubi.io/live/42a00bda-1716-409e-965f-c11807396025/playlist.m3u8
 #EXTINF:-1 tvg-name="Kartoon Channel!" tvg-id="400000033" tvg-logo="https://canvas.tubitv.com/opts/J87vaOoO1SROcA==/4258e598-4722-409b-8e3c-625f800ba9ba/CHgQeDoFMS4xLjJAAQ==" group-title="Kids & Family",Kartoon Channel!
 https://live-manifest.production-public.tubi.io/live/d206145d-36c9-462a-8803-46779548c49e/playlist.m3u8
+#EXTINF:-1 tvg-name="KCCI Iowa Des Moines 8" tvg-id="603907" tvg-logo="https://canvas.tubitv.com/opts/o5G4vNdphE_70g==/14d79fa8-04ea-4a04-9c57-22dca8e2851c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KCCI Iowa Des Moines 8
+https://live-manifest.production-public.tubi.io/live/4a7e9cd7-dc2c-431e-9aee-b600da68745e/playlist.m3u8
+#EXTINF:-1 tvg-name="KMTV 3 News Omaha" tvg-id="687448" tvg-logo="https://canvas.tubitv.com/opts/ReXWcRwwpY-gOg==/b4f8a8e0-d44c-480c-b6e6-2781bc0f2f69/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",KMTV 3 News Omaha
+https://live-manifest.production-public.tubi.io/live/8c1baf80-6a9c-4262-9a5c-06a981190e6d/playlist.m3u8
 #EXTINF:-1 tvg-name="LiveNOW from FOX" tvg-id="555127" tvg-logo="https://canvas.tubitv.com/opts/qXphKmGOHA6AJg==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjJAAQ==" group-title="National News",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/30ce17f7-c7e4-4721-93cb-551054593b69/playlist.m3u8
 #EXTINF:-1 tvg-name="Living with Evil" tvg-id="400000067" tvg-logo="https://canvas.tubitv.com/opts/-dKa4JA3kRQYlQ==/e4f84ab2-4935-4063-ad29-cc852b91e3b7/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",Living with Evil
@@ -323,8 +315,6 @@ https://live-manifest.production-public.tubi.io/live/d1aad2d2-9413-4d27-ba53-bd2
 https://live-manifest.production-public.tubi.io/live/e8627960-570f-492e-b87a-bc1fc5379bbf/playlist.m3u8
 #EXTINF:-1 tvg-name="Unsolved Mysteries" tvg-id="671073" tvg-logo="https://canvas.tubitv.com/opts/Qx5hBhnp1aNAZg==/864892f9-3ab0-4950-9f8b-189ec2d92c20/CHgQeDoFMS4xLjJAAQ==" group-title="Mystery",Unsolved Mysteries
 https://live-manifest.production-public.tubi.io/live/87d83d4f-785a-46c8-9e33-12e879929c35/playlist.m3u8
-#EXTINF:-1 tvg-name="UnXplained Zone" tvg-id="400000094" tvg-logo="https://canvas.tubitv.com/opts/6658mYCoYGuArg==/64bfc334-1bea-4a73-bb93-2966a10288f9/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",UnXplained Zone
-https://live-manifest.production-public.tubi.io/live/14e21e8b-e1cc-420f-9743-6e4625842681/playlist.m3u8
 #EXTINF:-1 tvg-name="UnXplained Zone" tvg-id="400000094" tvg-logo="https://canvas.tubitv.com/opts/6658mYCoYGuArg==/64bfc334-1bea-4a73-bb93-2966a10288f9/CHgQeDoFMS4xLjJAAQ==" group-title="True Crime",UnXplained Zone
 https://live-manifest.production-public.tubi.io/live/14e21e8b-e1cc-420f-9743-6e4625842681/playlist.m3u8
 #EXTINF:-1 tvg-name="Vice" tvg-id="666613" tvg-logo="https://canvas.tubitv.com/opts/mD4vWWWUVZhLtg==/e9857bc6-ee9a-4823-b3ea-ab97d0a85143/CHgQeDoFMS4xLjJAAQ==" group-title="Pop Culture",Vice
