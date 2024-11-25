@@ -235,8 +235,6 @@ https://live-manifest.production-public.tubi.io/live/d4996d1c-b12b-4220-ac05-b67
 https://live-manifest.production-public.tubi.io/live/b37c5276-8781-4541-8ef4-f51e4dede943/playlist.m3u8
 #EXTINF:-1 tvg-name="Nash Bridges" tvg-id="400000105" tvg-logo="https://canvas.tubitv.com/opts/W4Jum4azOmZMdg==/13cb369b-10c8-4017-82f6-3658ff67b899/CHgQeDoFMS4xLjJAAQ==" group-title="Classic TV",Nash Bridges
 https://live-manifest.production-public.tubi.io/live/9d75d44d-30f4-4b50-8a54-1d03c21bb052/playlist.m3u8
-#EXTINF:-1 tvg-name="NBA G League" tvg-id="400000061" tvg-logo="https://canvas.tubitv.com/opts/ZwZnn6E_ZevNWQ==/ece47be9-0d12-47d3-a818-12be0f5a80a5/CHgQeDoFMS4xLjJAAQ==" group-title="Sports On Now",NBA G League
-https://live-manifest.production-public.tubi.io/live/d2f6ffec-5bba-4f95-8764-5719e3a1208d/playlist.m3u8
 #EXTINF:-1 tvg-name="NBC News NOW" tvg-id="556174" tvg-logo="https://canvas.tubitv.com/opts/CGM972sEdvuVcQ==/a9097c5c-9374-49bd-b791-639fe3c02017/CHgQeDoFMS4xLjJAAQ==" group-title="National News",NBC News NOW
 https://live-manifest.production-public.tubi.io/live/afc413b0-0c3f-4f44-8071-d2abc79b9334/playlist.m3u8
 #EXTINF:-1 tvg-name="News 12 New York" tvg-id="557345" tvg-logo="https://canvas.tubitv.com/opts/QyBNLx_XbywhMg==/08fde41e-4252-484f-8b51-17124415b90c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",News 12 New York
