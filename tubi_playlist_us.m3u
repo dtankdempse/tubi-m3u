@@ -229,8 +229,6 @@ https://live-manifest.production-public.tubi.io/live/191dd93a-0971-4527-ad55-1a9
 https://live-manifest.production-public.tubi.io/live/1d12c8f5-5c6b-48a8-933b-5f892cfa0407/playlist.m3u8
 #EXTINF:-1 tvg-name="NBA FAST Channel" tvg-id="400000116" tvg-logo="https://canvas-lb.tubitv.com/opts/M21SbPNaRf7XiQ==/7d258341-afc7-4022-acd4-ce330c6db573/CHgQeDoFMS4xLjJAAQ==" group-title="Sports On Now",NBA FAST Channel
 https://live-manifest.production-public.tubi.io/live/9309d123-2269-421c-b789-9512f1387a73/playlist.m3u8
-#EXTINF:-1 tvg-name="NBA G League" tvg-id="400000061" tvg-logo="https://canvas-lb.tubitv.com/opts/ZwZnn6E_ZevNWQ==/ece47be9-0d12-47d3-a818-12be0f5a80a5/CHgQeDoFMS4xLjJAAQ==" group-title="Sports On Now",NBA G League
-https://live-manifest.production-public.tubi.io/live/6b792a90-6adb-45aa-b4b4-aa6ea4f31d9a/playlist.m3u8
 #EXTINF:-1 tvg-name="NBC News NOW" tvg-id="556174" tvg-logo="https://canvas-lb.tubitv.com/opts/Ui22BYk0aV04lQ==/dd770066-df10-4187-b8d5-c31d0b9c0a1f/CHgQeDoFMS4xLjI=" group-title="National News",NBC News NOW
 https://live-manifest.production-public.tubi.io/live/b0db0647-74ef-4130-922a-6d0a36a5f68e/playlist.m3u8
 #EXTINF:-1 tvg-name="News 12 New York" tvg-id="557345" tvg-logo="https://canvas-lb.tubitv.com/opts/QyBNLx_XbywhMg==/08fde41e-4252-484f-8b51-17124415b90c/CHgQeDoFMS4xLjJAAQ==" group-title="Local News",News 12 New York
